@@ -19,16 +19,16 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/create">
+          <Route path="/create" exact>
             <Create />
           </Route>
-          <Route path="/create/:id">
+          <Route path="/create/:id" exact>
             <Create />
           </Route>
-          <Route path="/search">
+          <Route path="/search" exact>
             <Search />
           </Route>
-          <Route path="/recipe/:id">
+          <Route path="/recipe/:id" exact>
             <Recipe />
           </Route>
         </Switch>
