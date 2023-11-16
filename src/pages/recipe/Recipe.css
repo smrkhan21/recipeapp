@@ -1,0 +1,62 @@
+.recipe {
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .recipe ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    margin-top: 0;
+  }
+  .recipe li {
+    list-style-type: none;
+    margin-right: 10px;
+    color: #777;
+  }
+  .recipe li::after {
+    content: ",";
+  }
+  .recipe li:last-child::after {
+    content: ".";
+  }
+  .method {
+    text-align: left;
+    line-height: 1.5em;
+  }
+
+  .recipe .buttons {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .recipe .buttons button{
+    color: white;
+    text-decoration: none;
+    display: block;
+    background: purple;
+    font-size: 0.9em;
+    width: 100px;
+    text-align: center;
+    width: 120px;
+    padding: 2px 10px;
+    border-radius: 4px;
+    margin: 20px 10px;
+    cursor: pointer;
+  }
+
+  .recipe .buttons .edit:hover{
+    background: rgb(107, 0, 107);
+  }
+
+  .recipe .buttons .delete{
+    background: #cc0000;
+  }
+
+  .recipe .buttons .delete:hover{
+    background: #ba0000;
+  }
